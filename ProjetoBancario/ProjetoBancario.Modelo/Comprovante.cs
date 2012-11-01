@@ -5,7 +5,16 @@ using System.Text;
 
 namespace ProjetoBancario.Modelo
 {
-    public class Comprovante:TransacaoBancaria
+    public class Comprovante
     {
+
+        public string Descricao { get; private set; }
+
+        public Comprovante(string descricao)
+        {
+            Descricao = descricao;
+        }
+
+
     }
 }

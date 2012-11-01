@@ -7,8 +7,15 @@ namespace ProjetoBancario.Modelo
 {
     public class Banco
     {
-        public int NumeroBanco{ get; set; }
-        public string DescricaoBanco { get; set; }
 
+        public int Numero { get; set; }
+        public string Descricao { get; set; }
+
+        List<Agencia> agencias = new List<Agencia>();
+        public IList<Agencia> Agencias
+        {
+            get { return agencias; }
+        }
     }
+
 }

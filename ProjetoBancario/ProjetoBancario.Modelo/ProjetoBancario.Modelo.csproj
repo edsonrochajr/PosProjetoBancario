@@ -46,7 +46,6 @@
     <Compile Include="Comprovante.cs" />
     <Compile Include="ContaCorrente.cs" />
     <Compile Include="ContaEspecial.cs" />
-    <Compile Include="ContaNormal.cs" />
     <Compile Include="Deposito.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Extrato.cs" />
@@ -56,7 +55,11 @@
     <Compile Include="Saque.cs" />
     <Compile Include="Telefone.cs" />
     <Compile Include="TransacaoBancaria.cs" />
+    <Compile Include="TransacaoMonetaria.cs" />
     <Compile Include="Transferencia.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

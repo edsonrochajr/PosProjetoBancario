@@ -7,5 +7,16 @@ namespace ProjetoBancario.Modelo
 {
     public class Extrato : TransacaoBancaria
     {
+        public Extrato(ContaCorrente conta)
+            : base(conta)
+        {
+
+        }
+
+        public override string Operacao
+        {
+            get { return "Extrato"; }
+        }
+
     }
 }

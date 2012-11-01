@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProjetoBancario.Modelo
 {
-    public class Telefone : Cliente
+    public class Telefone 
     {
         public string Tipo { get; set; }
         public int DDD { get; set; }

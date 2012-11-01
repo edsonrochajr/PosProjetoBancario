@@ -5,7 +5,18 @@ using System.Text;
 
 namespace ProjetoBancario.Modelo
 {
-    public class Saque : TransacaoBancaria
+    public class Saque : TransacaoMonetaria
     {
+
+        public Saque(ContaCorrente conta)
+            : base(conta)
+        {
+
+        }
+
+        public override string Operacao
+        {
+            get { return "Saque"; }
+        }
     }
 }

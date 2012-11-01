@@ -5,9 +5,8 @@ using System.Text;
 
 namespace ProjetoBancario.Modelo
 {
-    public class Endereco : Cliente
+    public class Endereco
     {
-
         public string TipoLogradouro { get; set; }
         public string Logradouro { get; set; }
         public int Numero { get; set; }
