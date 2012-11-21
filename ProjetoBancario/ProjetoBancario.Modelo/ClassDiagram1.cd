@@ -1,128 +1,172 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ProjetoBancario.Modelo.Agencia">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+    <Position X="4.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAgAAAAAAACAAAABgAA=</HashCode>
+      <HashCode>AAAAAAAAAAABAAAAAACAAAAIAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Agencia.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Contas" />
-    </ShowAsCollectionAssociation>
-  </Class>
-  <Class Name="ProjetoBancario.Modelo.Banco">
-    <Position X="11.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAAACAAAAAgAAAAAAAAAAABAAA=</HashCode>
-      <FileName>Banco.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Agencias" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Cliente">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="3" Width="1.5" />
+    <AssociationLine Name="telefones" Type="ProjetoBancario.Modelo.Telefone" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.944" />
+        <Point X="2.75" Y="3.944" />
+        <Point X="2.75" Y="4.632" />
+        <Point X="3.125" Y="4.632" />
+        <Point X="3.125" Y="5" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAgCAAAIAAAAAAAAAAAAAAAAAAAAAAAAEAEAA=</HashCode>
       <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Endereco" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="telefones" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Comprovante">
-    <Position X="13.5" Y="0.5" Width="1.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Comprovante.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.ContaCorrente">
-    <Position X="9.25" Y="4.5" Width="1.5" />
+    <Position X="5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAgAAAAAAAACAAAAAEQAAgAAAAAIAAAABAAI=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAACAAAAAEQAAAAAAAAIAAAABAAI=</HashCode>
       <FileName>ContaCorrente.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="TransacoesBancarias" />
-    </ShowAsCollectionAssociation>
+    <ShowAsAssociation>
+      <Property Name="Agencia" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="ProjetoBancario.Modelo.ContaEspecial">
-    <Position X="11.75" Y="4.75" Width="1.5" />
+    <Position X="6" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>ContaEspecial.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Deposito">
-    <Position X="3" Y="3.25" Width="1.5" />
+    <Position X="8" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Deposito.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Endereco">
-    <Position X="11.75" Y="2.25" Width="1.5" />
+    <Position X="3" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAAAAAAAAAAAAAIEAAAAgACBAAAAAAAAAAAAAAADAAA=</HashCode>
       <FileName>Endereco.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Extrato">
-    <Position X="0.75" Y="1.25" Width="1.5" />
+    <Position X="0.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extrato.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Comprovante" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="ProjetoBancario.Modelo.PessoaFisica">
-    <Position X="0.5" Y="5.75" Width="1.5" />
+    <Position X="0.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAIAAAIAAAAAAAAAAACAAAA=</HashCode>
       <FileName>PessoaFisica.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.PessoaJuridica">
-    <Position X="2.75" Y="5.75" Width="1.5" />
+    <Position X="2.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>PessoaJuridica.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Saque">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Saque.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.Telefone">
-    <Position X="14" Y="2.75" Width="1.5" />
+    <Position X="2.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAABAAQ=</HashCode>
       <FileName>Telefone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjetoBancario.Modelo.TransacaoBancaria">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEgAAAAAEAAEAAAAAAAAAAAABAAAQAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAAEgAAAAAEAAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
       <FileName>TransacaoBancaria.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Conta" />
+      <Property Name="Comprovante" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="ProjetoBancario.Modelo.TransacaoMonetaria" Collapsed="true">
-    <Position X="7.25" Y="1" Width="1.5" />
+  <Class Name="ProjetoBancario.Modelo.TransacaoMonetaria">
+    <Position X="9.25" Y="2.5" Width="2" />
+    <InheritanceLine Type="ProjetoBancario.Modelo.TransacaoBancaria" FixedFromPoint="true">
+      <Path>
+        <Point X="8" Y="2.188" />
+        <Point X="8.375" Y="2.188" />
+        <Point X="8.375" Y="3.242" />
+        <Point X="9.25" Y="3.242" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TransacaoMonetaria.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProjetoBancario.Modelo.Transferencia" Collapsed="true">
-    <Position X="8.25" Y="3.25" Width="1.5" />
+  <Class Name="ProjetoBancario.Modelo.Transferencia">
+    <Position X="11.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Transferencia.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="ProjetoBancario.Modelo.Servico.ServicoSaque">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Servico\ServicoSaque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjetoBancario.Modelo.Repositorio.RepositorioSaque">
+    <Position X="10.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorio\RepositorioSaque.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="saques" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ProjetoBancario.Modelo.Repositorio.RepositorioTransacaoBancaria">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Repositorio\RepositorioTransacaoBancaria.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="transacoes" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Tahoma" Size="8.25" />
 </ClassDiagram>

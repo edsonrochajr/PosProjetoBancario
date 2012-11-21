@@ -14,12 +14,6 @@ namespace ProjetoBancario.Modelo
         }
 
         public decimal Valor { get; set; }
-
-        public override Comprovante GeraComprovante()
-        {
-            return new Comprovante(Operacao + "em:" + Data + "Custo:" + Custo + "Valor de:" + Valor);
-        }
-
     }
 
 

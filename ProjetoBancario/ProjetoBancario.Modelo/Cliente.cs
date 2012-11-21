@@ -10,6 +10,7 @@ namespace ProjetoBancario.Modelo
 
         public string Nome { get; set; }
         public string Email { get; set; }
+        
         List<Telefone> telefones = new List<Telefone>();
         public IList<Telefone> Telefones
         {

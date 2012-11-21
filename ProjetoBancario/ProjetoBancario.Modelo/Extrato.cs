@@ -13,10 +13,21 @@ namespace ProjetoBancario.Modelo
 
         }
 
-        public override string Operacao
+        public override void Executa()
         {
-            get { return "Extrato"; }
+            throw new NotImplementedException();
         }
 
+        public override Comprovante Comprovante
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            protected set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

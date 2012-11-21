@@ -17,24 +17,8 @@ namespace ProjetoBancario.Modelo
         public DateTime Data { get; set; }
         public decimal Custo { get; set; }
 
-        public Comprovante Comprovante { get; protected set; }
+        public abstract Comprovante Comprovante { get; protected set; }
 
-        public virtual Comprovante GeraComprovante()
-        {
-            return new Comprovante(Operacao + "em:" + Data + "Custo:" + Custo);
-        }
-
-        public abstract string Operacao
-        { get; }
-
-
-        public virtual void Executa()
-        {
-            Conta.Debita(Custo);
-        }
-
-
-
-
+        public abstract void Executa();
     }
 }

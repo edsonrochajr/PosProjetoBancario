@@ -12,13 +12,13 @@ namespace ProjetoBancario.Modelo
         public string Status { get; set; }
         public DateTime DataAbertura { get; set; }
         public decimal Saldo { get; protected set; }
+        public Cliente Cliente { get; set; }
 
-
-        List<TransacaoBancaria> transacoesBancarias = new List<TransacaoBancaria>();
-        public IList<TransacaoBancaria> TransacoesBancarias
-        {
-            get { return transacoesBancarias; }
-        }
+        //List<TransacaoBancaria> transacoesBancarias = new List<TransacaoBancaria>();
+        //public IList<TransacaoBancaria> TransacoesBancarias
+        //{
+        //    get { return transacoesBancarias; }
+        //}
 
 
 

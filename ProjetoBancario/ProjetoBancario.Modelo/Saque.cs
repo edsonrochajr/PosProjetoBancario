@@ -7,16 +7,28 @@ namespace ProjetoBancario.Modelo
 {
     public class Saque : TransacaoMonetaria
     {
-
-        public Saque(ContaCorrente conta)
-            : base(conta)
+        public Saque(ContaCorrente conta, decimal valor) : base(conta)
         {
-
+            this.Valor = valor;
         }
 
-        public override string Operacao
+        public override void Executa()
         {
-            get { return "Saque"; }
+            Conta.Debita(Valor);
+            Comprovante = GerarComprovante();
         }
+
+        private Comprovante GerarComprovante()
+        {
+            return new Comprovante("Saque em:" + Data + "Custo:" + Custo + "Valor de:" + Valor);
+        }
+
+        public override Comprovante Comprovante
+        {
+            get;
+            protected set;
+        }
+
+
     }
 }

@@ -8,7 +8,7 @@ namespace ProjetoBancario.Modelo
     public class Telefone 
     {
         public string Tipo { get; set; }
-        public int DDD { get; set; }
-        public int Numero { get; set; }
+        public string DDD { get; set; }
+        public string Numero { get; set; }
     }
 }

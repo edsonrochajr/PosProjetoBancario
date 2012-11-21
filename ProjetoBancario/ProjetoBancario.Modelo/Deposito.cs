@@ -7,15 +7,29 @@ namespace ProjetoBancario.Modelo
 {
     public class Deposito : TransacaoMonetaria
     {
-        public Deposito(ContaCorrente conta)
+        public Deposito(ContaCorrente conta,decimal valor)
             : base(conta)
         {
+            this.Valor = valor;
 
         }
 
-        public override string Operacao
+        public override void Executa()
         {
-            get { return "Deposito"; }
+            Conta.Credita(Valor);
+            Comprovante = GerarComprovante();
         }
+
+        private Comprovante GerarComprovante()
+        {
+            return new Comprovante("Deposito em:" + Data + "Custo:" + Custo + "Valor de:" + Valor);
+        }
+
+        public override Comprovante Comprovante
+        {
+            get;
+            protected set;
+        }
+
     }
 }

@@ -9,13 +9,15 @@ namespace ProjetoBancario.Modelo
     {
         public int Numero { get; set; }
         public string Descricao { get; set; }
-        public Banco Banco { get; set; }
-
-        List<ContaCorrente> contas = new List<ContaCorrente>();
-        public IList<ContaCorrente> Contas
-        {
-            get { return contas; }
-        }
+        public int NumeroBanco { get; set; }
+        public string NomeBanco { get; set; }
+        
+        
+        //List<ContaCorrente> contas = new List<ContaCorrente>();
+        //public IList<ContaCorrente> Contas
+        //{
+        //    get { return contas; }
+        //}
 
 
     }
