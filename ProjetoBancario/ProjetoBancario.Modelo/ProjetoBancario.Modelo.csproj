@@ -58,23 +58,21 @@
     <Compile Include="Repositorio\RepositorioAgencia.cs" />
     <Compile Include="Repositorio\RepositorioCliente.cs" />
     <Compile Include="Repositorio\RepositorioContaCorrente.cs" />
-    <Compile Include="Repositorio\RepositorioSaque.cs" />
     <Compile Include="Repositorio\RepositorioTransacaoBancaria.cs" />
     <Compile Include="Saque.cs" />
-    <Compile Include="Servico\Conta.cs" />
-    <Compile Include="Servico\ServicoBloquearConta.cs" />
     <Compile Include="Servico\ServicoCliente.cs" />
-    <Compile Include="Servico\ServicoSaque.cs" />
+    <Compile Include="Servico\ServicoConta.cs" />
     <Compile Include="Telefone.cs" />
+    <Compile Include="Teste\AgenciaTeste.cs" />
     <Compile Include="Teste\ClienteTestes.cs" />
     <Compile Include="Teste\ContaCorreteTestes.cs" />
-    <Compile Include="Teste\SaqueTestes.cs" />
+    <Compile Include="Teste\ExtratoTeste.cs" />
     <Compile Include="TransacaoBancaria.cs" />
     <Compile Include="TransacaoMonetaria.cs" />
     <Compile Include="Transferencia.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

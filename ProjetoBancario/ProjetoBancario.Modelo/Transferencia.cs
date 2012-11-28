@@ -13,6 +13,7 @@ namespace ProjetoBancario.Modelo
             : base(conta)
         {
             this.Valor = valor;
+            this.ContaDestino = contaDestino;
         }
 
 

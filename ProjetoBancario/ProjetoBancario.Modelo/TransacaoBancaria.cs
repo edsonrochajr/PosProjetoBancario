@@ -12,6 +12,8 @@ namespace ProjetoBancario.Modelo
         public TransacaoBancaria(ContaCorrente contaCorrente)
         {
             Conta = contaCorrente;
+            Data = DateTime.Now;
+            Custo = 0;
         }
 
         public DateTime Data { get; set; }

@@ -14,13 +14,7 @@ namespace ProjetoBancario.Modelo
         public decimal Saldo { get; protected set; }
         public Cliente Cliente { get; set; }
 
-        //List<TransacaoBancaria> transacoesBancarias = new List<TransacaoBancaria>();
-        //public IList<TransacaoBancaria> TransacoesBancarias
-        //{
-        //    get { return transacoesBancarias; }
-        //}
-
-
+        public bool Ativa { get { return Status != "Bloqueado" && Status != "Fechado"; } }
 
 
         public virtual decimal Debita(decimal valor)

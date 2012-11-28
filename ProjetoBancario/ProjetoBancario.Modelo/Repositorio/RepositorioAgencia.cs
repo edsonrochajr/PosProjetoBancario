@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProjetoBancario.Modelo.Repositorio
 {
-    public class RepositorioAgencia
+    public static class RepositorioAgencia
     {
 
         static List<Agencia> Agencias = new List<Agencia>();

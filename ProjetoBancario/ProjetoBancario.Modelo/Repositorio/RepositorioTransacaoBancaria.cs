@@ -23,15 +23,17 @@ namespace ProjetoBancario.Modelo.Repositorio
             transacoes.Clear();
         }
 
-        public static List<TransacaoBancaria> Listar()
+
+        public static IEnumerable<TransacaoBancaria> EmiteExtrato(ContaCorrente conta, int disParaTras)
         {
-            return transacoes;
+            var hoje = DateTime.Now;
+            return EmiteExtrato(conta, hoje.AddDays(-disParaTras), hoje);
         }
 
-        public static IEnumerable<TransacaoBancaria> EmiteExtrato(ContaCorrente conta, int diasParaTras)
+        public static IEnumerable<TransacaoBancaria> EmiteExtrato(ContaCorrente conta, DateTime ini, DateTime fim)
         {
             return transacoes.Where(t => 
-                t.Data > DateTime.Now.Date.AddDays(-diasParaTras) &&
+                t.Data >= ini && t.Data <= fim &&
                 t.Conta == conta);
         }
     }
